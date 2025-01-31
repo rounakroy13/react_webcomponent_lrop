@@ -14,9 +14,12 @@ import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import "@ui5/webcomponents/dist/CardHeader.js";
 export function Home() {
     const navigate = useNavigate();
-    const handleCardClick = () => {
+    const handleCardClickLROP = () => {
         navigate("/ListReport");
     };
+    const handleCardClickTableFetch = () => {
+        navigate("/TableFetch");
+    }
     return (
         <div>
             <TabContainer
@@ -33,7 +36,7 @@ export function Home() {
                                 subtitleText="Direct Reports"
                                 titleText="Maintain Employee"
                                 interactive
-                                onClick={handleCardClick}
+                                onClick={handleCardClickLROP}
                             />
 
                         }
@@ -59,7 +62,7 @@ export function Home() {
                         }}
                     >
                         <div style={{ padding: "25px" }}>
-                            <Text> Add New Employee </Text>
+                            <Text> Dummy App </Text>
                         </div>
                     </Card>
                     <Card
@@ -75,23 +78,30 @@ export function Home() {
                         }}
                     >
                         <div style={{ padding: "25px" }}>
-                            <Text> Remove Employee Details </Text>
+                            <Text>  Dummy App </Text>
                         </div>
                     </Card>
                 </Tab>
-                <Tab text="Sales Order">
+                <Tab text="Table Example">
                     <Card
                         header={
                             <CardHeader
                                 avatar={<Icon name="approvals" />}
-                                subtitleText="Approve"
-                                titleText="Manage Sales Order"
+                                subtitleText="Using Fetch"
+                                titleText="Table"
+                                interactive
+                                onClick={handleCardClickTableFetch}
                             />
                         }
                         style={{
                             width: "300px",
                         }}
-                    ></Card>
+                        
+                    >
+                        <div style={{ padding: "25px" }}>
+                            <Text>  Table with Nothwind Data - Fetch </Text>
+                        </div>
+                    </Card>
                 </Tab>
                 <Tab text="Invoice">
                     <Card
@@ -99,13 +109,17 @@ export function Home() {
                             <CardHeader
                                 avatar={<Icon name="approvals" />}
                                 subtitleText="Approve"
-                                titleText="Manage Invoice"
+                                titleText="Table"
                             />
                         }
                         style={{
                             width: "300px",
                         }}
-                    ></Card>
+                    >
+                         <div style={{ padding: "25px" }}>
+                            <Text>  Table with Nothwind Data - oData Model </Text>
+                        </div>
+                    </Card>
                 </Tab>
             </TabContainer>
         </div>

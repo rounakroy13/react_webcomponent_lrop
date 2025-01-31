@@ -8,6 +8,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./Home";
 import { ListReport } from "./ListReport";
 import { DetailsPage } from "./DetailsPage";
+import { TableFetch } from "./TableFetch";
 export function MyApp() {
     return (
         <div>
@@ -19,12 +20,6 @@ export function MyApp() {
                     />
                 }
                 notificationsCount="10"
-                /* onLogoClick={function Ki() { }}
-                onMenuItemClick={function Ki() { }}
-                onNotificationsClick={function Ki() { }}
-                onProductSwitchClick={function Ki() { }}
-                onProfileClick={function Ki() { }}
-                onSearchButtonClick={function Ki() { }} */
                 primaryTitle="Home"
                 profile={
                     <Avatar>
@@ -40,6 +35,7 @@ export function MyApp() {
             <Route path="/home" element={<Home />} />
             <Route path="/ListReport" element={<ListReport />} />
             <Route path="/DetailsPage" element={<DetailsPage />} />
+            <Route path="/TableFetch" element={<TableFetch />} />
             <Route path="*" element={<Navigate replace to="/home" />} />
             </Routes>
         </div>
