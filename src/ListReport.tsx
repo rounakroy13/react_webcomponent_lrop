@@ -32,8 +32,8 @@ export function ListReport() {
     // Filter employees based on search input
     const filteredEmployees = employees.filter(
         (emp) =>
-            emp.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            emp.firstname.toLowerCase().includes(searchTerm.toLowerCase())
+            emp.id.toLowerCase().includes((searchTerm || "").toLowerCase()) ||
+            emp.firstname.toLowerCase().includes((searchTerm || "").toLowerCase())
     );
 
     const navigate = useNavigate();
