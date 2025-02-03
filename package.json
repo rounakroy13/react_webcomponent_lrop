@@ -15,7 +15,7 @@
     "@ui5/webcomponents": "2.6.2",
     "@ui5/webcomponents-fiori": "^2.6.2",
     "@ui5/webcomponents-icons": "2.6.2",
-    "@ui5/webcomponents-react": "2.6.0",
+    "@ui5/webcomponents-react": "^2.6.0",
     "@ui5/webcomponents-react-base": "^2.6.0",
     "@ui5/webcomponents-react-charts": "^2.6.0",
     "react": "19.0.0",

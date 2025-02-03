@@ -30,7 +30,6 @@ export function TableFetch() {
           />
         }
         primaryTitle="Table with Lazy Loading and Northwind Data"
-        profile={<Avatar icon={employeeIcon} />}
       />
        <Table
        features={<TableGrowing onLoadMore={fetchMoreData} type="Scroll"/>}
