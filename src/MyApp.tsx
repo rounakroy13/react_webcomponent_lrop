@@ -9,7 +9,6 @@ import { Home } from "./Home";
 import { ListReport } from "./ListReport";
 import { DetailsPage } from "./DetailsPage";
 import { TableFetch } from "./TableFetch";
-import { TableoDataFetch } from "./TableoDataFetch";
 export function MyApp() {
     return (
         <div>
@@ -37,7 +36,6 @@ export function MyApp() {
             <Route path="/ListReport" element={<ListReport />} />
             <Route path="/DetailsPage" element={<DetailsPage />} />
             <Route path="/TableFetch" element={<TableFetch />} />
-            <Route path="/TableoDataFetch" element={<TableoDataFetch />} />
             <Route path="*" element={<Navigate replace to="/home" />} />
             </Routes>
         </div>
